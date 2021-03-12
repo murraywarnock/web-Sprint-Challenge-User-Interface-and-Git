@@ -1,59 +1,17 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
+/* General styling after resest.css */
 * {
     box-sizing: border-box;
+    text-decoration: none;
+       /* TEMP MARGIN FOR DEV */
+    border: 1px solid yellow;
+
 }
 
 html, body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
+    line-height: 1.4rem;
+
 }
 
 h1, h2, h3, h4, h5 {
@@ -65,10 +23,39 @@ h1, h2, h3, h4, h5 {
 p {
     line-height: 1.4;
 }
-
-.container {
+.container, .about-page {
     width: 800px;
+    /* width: 57%; */
     margin: 0 auto;
+    border: 1px solid red;
+
+ }
+ 
+/* ************END GENERAL STYLING************** */
+.header-bar {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    /* justify-content: space-between; */
+    padding-bottom: 20px;  
+    border: 1px solid red;
+
+}
+.header-bar img {
+    border: 1px solid red;
+}
+.header-bar nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 80%;
+    color: black;
+    border: 1px solid red;
+    padding-bottom: 0;
+    padding-top: 20px;
+}
+.header-bar nav a {
+    color: black;
 }
 
 .top-content {
@@ -111,6 +98,37 @@ p {
     align-items: center;
     justify-content: center;
 }
+.middle-content .boxes .box1 {
+    background: teal;
+}
+.middle-content .boxes .box2 {
+    background: gold;
+}
+.middle-content .boxes .box3 {
+    background: cadetblue;
+}
+.middle-content .boxes .box4 {
+    background: coral;
+}
+.middle-content .boxes .box5 {
+    background: crimson;
+}
+.middle-content .boxes .box6 {
+    background: forestgreen;
+}
+.middle-content .boxes .box7 {
+    background: darkorchid;
+}
+.middle-content .boxes .box8 {
+    background: hotpink;
+}
+.middle-content .boxes .box9 {
+    background: indigo;
+}
+.middle-content .boxes .box10 {
+    background: dodgerblue;
+}
+
 
 .bottom-content {
     display: flex;
@@ -144,3 +162,36 @@ footer nav a {
     color: white;
     text-decoration: none;
 }
+/************************
+***ABOUT PAGE SPECIFIC***
+*************************/
+.about-box-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+ 
+}
+.about-box {
+    width: 48%;
+    padding: 0 1%;
+    padding-bottom: 20px;      
+    margin-bottom: 20px;
+    border-bottom: 1px dashed black;
+
+}
+
+.learn-more-box {
+    /* display: inline; */
+    color: black;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 3%;
+    text-align: center;
+    margin-top: 5%;
+    width: 8rem;
+}
+.learn-more-box a {
+    /* display: inline; */
+    color: black;
+}
+
