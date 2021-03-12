@@ -1,17 +1,16 @@
 /* General styling after resest.css */
+/* Link to reset.css before linking to this file in html */
 * {
     box-sizing: border-box;
     text-decoration: none;
-       /* TEMP MARGIN FOR DEV */
+    /* TEMP MARGIN FOR DEV DOES NOT WORK - WHY????? */
     /* border: 1px solid yellow; */
-
 }
 
 html, body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
     line-height: 1.4rem;
-
 }
 
 h1, h2, h3, h4, h5 {
@@ -25,6 +24,7 @@ p {
 }
 
 /* ************END GENERAL STYLING************** */
+
 .container, .about-page {
     width: 800px;
     margin: 0 auto;
@@ -35,7 +35,6 @@ p {
     flex-wrap: wrap;
     width: 100%;
     padding-bottom: 20px;  
-
 }
 
 .header-bar nav {
@@ -49,6 +48,8 @@ p {
 }
 
 .header-bar nav a {
+    /* why won't this <a> child of class .learn-more-link inherit color? */
+    /* Maybe because element defaults have precedence over class properties?? */
     color: black;
 }
 
@@ -64,6 +65,10 @@ p {
     width: 48%;
     padding: 0 1%;
     padding-bottom: 20px;  
+}
+
+.top-bot-txt {
+    margin: 3% 1%;
 }
 
 .middle-content {
@@ -123,7 +128,6 @@ p {
     background: dodgerblue;
 }
 
-
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
@@ -141,8 +145,8 @@ p {
 footer {
     width: 100%;
     background: black;
+    margin-top: 5%;
 }
-
 footer nav {
     width: 60%;
     display: flex;
@@ -171,11 +175,9 @@ footer nav a {
     padding-bottom: 20px;      
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
-
 }
 
-.learn-more-box {
-    /* display: inline; */
+.learn-more-link {
     color: black;
     border: 2px solid black;
     border-radius: 10px;
@@ -184,14 +186,7 @@ footer nav a {
     margin-top: 5%;
     width: 8rem;
 }
-.learn-more-box a {
-    /* display: inline; */
-    color: black;
-}
 
-.top-bot-txt {
-     margin: 3% 1%;
-}
-footer {
-    margin-top: 5%;
+.learn-more-link a {
+    color: black;
 }
