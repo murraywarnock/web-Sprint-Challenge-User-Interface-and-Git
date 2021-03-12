@@ -3,7 +3,7 @@
     box-sizing: border-box;
     text-decoration: none;
        /* TEMP MARGIN FOR DEV */
-    border: 1px solid yellow;
+    /* border: 1px solid yellow; */
 
 }
 
@@ -23,37 +23,31 @@ h1, h2, h3, h4, h5 {
 p {
     line-height: 1.4;
 }
+
+/* ************END GENERAL STYLING************** */
 .container, .about-page {
     width: 800px;
-    /* width: 57%; */
     margin: 0 auto;
-    border: 1px solid red;
-
  }
  
-/* ************END GENERAL STYLING************** */
-.header-bar {
+ .header-bar {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    /* justify-content: space-between; */
     padding-bottom: 20px;  
-    border: 1px solid red;
 
 }
-.header-bar img {
-    border: 1px solid red;
-}
+
 .header-bar nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     width: 80%;
-    color: black;
-    border: 1px solid red;
+    color: black;    
     padding-bottom: 0;
     padding-top: 20px;
 }
+
 .header-bar nav a {
     color: black;
 }
@@ -185,7 +179,7 @@ footer nav a {
     color: black;
     border: 2px solid black;
     border-radius: 10px;
-    padding: 3%;
+    padding: 1.5%;
     text-align: center;
     margin-top: 5%;
     width: 8rem;
@@ -195,3 +189,9 @@ footer nav a {
     color: black;
 }
 
+.top-bot-txt {
+     margin: 3% 1%;
+}
+footer {
+    margin-top: 5%;
+}
